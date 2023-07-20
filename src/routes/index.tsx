@@ -1,25 +1,23 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Hero from "~/components/Hero/hero";
+import Navbar from "~/components/navbar/navbar";
 
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
+      <Navbar />
+      <Hero />
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Maquette",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "HAHA NO DESCRIPTION",
     },
   ],
 };
